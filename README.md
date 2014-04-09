@@ -13,9 +13,9 @@ npm install camel-case --save
 ```javascript
 var camelCase = require('camel-case');
 
-sentenceCase('string');    //=> "string"
-sentenceCase('dot.case');  //=> "dotCase"
-sentenceCase('PascalCase'); //=> "pascalCase"
+camelCase('string');    //=> "string"
+camelCase('dot.case');  //=> "dotCase"
+camelCase('PascalCase'); //=> "pascalCase"
 ```
 
 ## License
