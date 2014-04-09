@@ -10,11 +10,6 @@ Camel case a string.
 npm install camel-case --save
 ```
 
-### Browser
-#### [Require.js](http://requirejs.org/docs/start.html)
-
-`camel-case` uses [sentence-case](https://github.com/blakeembrey/sentence-case).
-
 ## Usage
 
 ```javascript
