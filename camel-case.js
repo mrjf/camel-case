@@ -7,7 +7,11 @@ var sentence = require('sentence-case');
  * @return {String}
  */
 module.exports = function (string) {
-  return sentence(string).replace(/ (\w)/g, function (_, $1) {
-    return $1.toUpperCase();
-  });
+  return sentence(string)
+    // Replace periods between numeric entities with an underscore.
+    .replace(/\./g, '_')
+    // Replace spaces between words with a string upper cased character.
+    .replace(/ (\w)/g, function (_, $1) {
+      return $1.toUpperCase();
+    });
 };
