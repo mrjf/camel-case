@@ -18,6 +18,11 @@ describe('camel case', function () {
     assert.equal(camelCase('path/case'), 'pathCase');
   });
 
+  it('should underscore periods inside numbers', function () {
+    assert.equal(camelCase('version 1.2.10'), 'version1_2_10');
+    assert.equal(camelCase('version 1.21.0'), 'version1_21_0');
+  });
+
   it('should camel case pascal cased strings', function () {
     assert.equal(camelCase('TestString'), 'testString');
   });
