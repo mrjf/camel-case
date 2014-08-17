@@ -1,6 +1,6 @@
 {
   "name": "camel-case",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Camel case a string",
   "main": "camel-case.js",
   "scripts": {
