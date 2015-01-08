@@ -12,7 +12,18 @@
   },
   "keywords": [
     "camel",
-    "case"
+    "case",
+    "camelcase",
+    "camel-case",
+    "dash",
+    "hyphen",
+    "dot",
+    "underscore",
+    "lodash",
+    "separator",
+    "string",
+    "text",
+    "convert"
   ],
   "author": {
     "name": "Blake Embrey",
