@@ -26,4 +26,8 @@ describe('camel case', function () {
   it('should camel case pascal cased strings', function () {
     assert.equal(camelCase('TestString'), 'testString');
   });
+
+  it('should camel case non-latin strings', function () {
+    assert.equal(camelCase('simple éxample'), 'simpleÉxample');
+  });
 });
