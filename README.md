@@ -25,6 +25,8 @@ camelCase('string');         //=> "string"
 camelCase('dot.case');       //=> "dotCase"
 camelCase('PascalCase');     //=> "pascalCase"
 camelCase('version 1.2.10'); //=> "version1_2_10"
+
+camelCase('STRING 1.2', 'tr'); //=> "strıng1_2"
 ```
 
 ## License

@@ -30,4 +30,8 @@ describe('camel case', function () {
   it('should camel case non-latin strings', function () {
     assert.equal(camelCase('simple éxample'), 'simpleÉxample');
   });
+
+  it('should support locale', function () {
+    assert.equal(camelCase('STRING 1.2', 'tr'), 'strıng1_2');
+  });
 });

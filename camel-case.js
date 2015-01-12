@@ -1,18 +1,19 @@
-var upper    = require('upper-case');
-var sentence = require('sentence-case');
+var upperCase    = require('upper-case');
+var sentenceCase = require('sentence-case');
 
 /**
  * Camel case a string.
  *
  * @param  {String} string
+ * @param  {String} [locale]
  * @return {String}
  */
-module.exports = function (string) {
-  return sentence(string)
+module.exports = function (string, locale) {
+  return sentenceCase(string, locale)
     // Replace periods between numeric entities with an underscore.
     .replace(/(\d) (?=\d)/g, '$1_')
     // Replace spaces between words with an upper cased character.
-    .replace(/ (.)/g, function (_, $1) {
-      return upper($1);
+    .replace(/ (.)/g, function (m, $1) {
+      return upperCase($1, locale);
     });
 };
