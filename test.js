@@ -34,4 +34,8 @@ describe('camel case', function () {
   it('should support locale', function () {
     assert.equal(camelCase('STRING 1.2', 'tr'), 'strıng1_2')
   })
+
+  it('should enable number grouping', function () {
+    assert.equal(camelCase('test 1 2 3', null, true), 'test123')
+  })
 })
