@@ -3,8 +3,10 @@
   "version": "1.2.0",
   "description": "Camel case a string",
   "main": "camel-case.js",
+  "typings": "camel-case.d.ts",
   "files": [
     "camel-case.js",
+    "camel-case.d.ts",
     "LICENSE"
   ],
   "scripts": {
