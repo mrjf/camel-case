@@ -45,9 +45,9 @@
   },
   "homepage": "https://github.com/blakeembrey/camel-case",
   "devDependencies": {
-    "istanbul": "^0.3.0",
+    "istanbul": "^0.4.3",
     "mocha": "^2.2.1",
-    "standard": "^3.3.0"
+    "standard": "^7.1.2"
   },
   "dependencies": {
     "no-case": "^2.0.0",
