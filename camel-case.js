@@ -1,15 +1,15 @@
 var upperCase = require('upper-case')
-var sentenceCase = require('sentence-case')
+var noCase = require('no-case')
 
 /**
  * Camel case a string.
  *
- * @param  {String} string
- * @param  {String} [locale]
- * @return {String}
+ * @param  {string} value
+ * @param  {string} [locale]
+ * @return {string}
  */
-module.exports = function (string, locale, mergeNumbers) {
-  var result = sentenceCase(string, locale)
+module.exports = function (value, locale, mergeNumbers) {
+  var result = noCase(value, locale)
 
   // Replace periods between numeric entities with an underscore.
   if (!mergeNumbers) {
