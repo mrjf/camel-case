@@ -13,7 +13,7 @@ module.exports = function (value, locale, mergeNumbers) {
 
   // Replace periods between numeric entities with an underscore.
   if (!mergeNumbers) {
-    result = result.replace(/(\d) (?=\d)/g, '$1_')
+    result = result.replace(/ (?=\d)/g, '_')
   }
 
   // Replace spaces between words with an upper cased character.

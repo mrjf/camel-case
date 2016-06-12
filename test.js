@@ -19,8 +19,8 @@ describe('camel case', function () {
   })
 
   it('should underscore periods inside numbers', function () {
-    assert.equal(camelCase('version 1.2.10'), 'version1_2_10')
-    assert.equal(camelCase('version 1.21.0'), 'version1_21_0')
+    assert.equal(camelCase('version 1.2.10'), 'version_1_2_10')
+    assert.equal(camelCase('version 1.21.0'), 'version_1_21_0')
   })
 
   it('should camel case pascal cased strings', function () {
@@ -32,7 +32,7 @@ describe('camel case', function () {
   })
 
   it('should support locale', function () {
-    assert.equal(camelCase('STRING 1.2', 'tr'), 'strıng1_2')
+    assert.equal(camelCase('STRING 1.2', 'tr'), 'strıng_1_2')
   })
 
   it('should enable number grouping', function () {

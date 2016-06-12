@@ -25,9 +25,9 @@ var camelCase = require('camel-case')
 camelCase('string')         //=> "string"
 camelCase('dot.case')       //=> "dotCase"
 camelCase('PascalCase')     //=> "pascalCase"
-camelCase('version 1.2.10') //=> "version1_2_10"
+camelCase('version 1.2.10') //=> "version_1_2_10"
 
-camelCase('STRING 1.2', 'tr') //=> "strıng1_2"
+camelCase('STRING 1.2', 'tr') //=> "strıng_1_2"
 
 camelCase('string 1 2 3', null, true) //=> "string123"
 ```
