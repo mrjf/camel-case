@@ -4,6 +4,7 @@
 [![NPM downloads][downloads-image]][downloads-url]
 [![Build status][travis-image]][travis-url]
 [![Test coverage][coveralls-image]][coveralls-url]
+[![Greenkeeper badge](https://badges.greenkeeper.io/blakeembrey/camel-case.svg)](https://greenkeeper.io/)
 
 Camel case a string. Explicitly adds a single underscore between groups of numbers to maintain readability and reversibility (E.g. `1.20.5` becomes `1_20_5`, not `1205`), by default.
 
